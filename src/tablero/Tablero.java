@@ -1,7 +1,6 @@
-// Ctrl + Space dropdown menu
-
+//First time programming, I didn't have experience before and Maybe this game was a little too hard for a begginer but I tried c:.
 package tablero;
-
+// tried to use random library to make some traps but i didn't work
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,25 +10,25 @@ import java.util.Scanner;
  */
 public class Tablero {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
          
         
         //Declaration of the Array
+        // some of the var are not used because before friday class i tried to do it in my way but did not work :c
         char player [][] = new char [8][8];
         char trap  [][] = new char [8][8];
         int num [][]= new int [8][8];
         String vac = " ";
          int val =64;
           int posi = 0;
-          int mover = 0;
-          int fila = 7;
+        
           Random random = new Random();
             Scanner sp= new Scanner(System.in);
         //We use while to make a nonstop game or program
         //START OF THE MENU
+        
+        // I don't know why it keeps showing the first tablero 2 times 
           while (true) {            
            
           
@@ -125,7 +124,9 @@ public class Tablero {
                 }
                System.out.println("│");
                 System.out.println("----*-----*-----*------*------*------*------*-");
+               
         }
+            // we use this to erase the last @ but it didn't work
                for (int i = 0; i < player.length; i++) {
                             for (int j = 0; j < player[i].length; j++) {
                                 player[i][j] = ' ';
@@ -146,7 +147,7 @@ public class Tablero {
                         
                      if (posi <= 56 ){
                      player[0][57-posi]= '@'; 
-                                
+                                // i tried to make it work with an excel table and some logic but I don't know if it works
                                } else if (posi <= 48 ){
                            player[1][49-posi]= '@';  
                                            
@@ -214,3 +215,5 @@ public class Tablero {
 
     
 
+// this being my first time programming I enjoyed developing my logic and learned a lot of different ways to make something  
+// sometimes I got frustated because maybe teacher was too fast for myh first time but It will help in a future "I hope".
